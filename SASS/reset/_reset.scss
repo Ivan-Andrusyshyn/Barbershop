@@ -1,0 +1,30 @@
+body {
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.02em;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration:none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    margin: 0;
+}
+button {
+    cursor: pointer;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
