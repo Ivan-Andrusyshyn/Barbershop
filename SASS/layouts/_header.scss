@@ -168,8 +168,8 @@ background-color: var(--orange-active);
     top: 0;
     right: 0;
     overflow-y: auto;
-    height: 600px;
-    min-width: 70%;
+    height: 700px;
+    min-width: 80%;
     padding-left: 40px;
     padding-top: 118px;
     background-color: var(--color-white);
@@ -223,6 +223,9 @@ background-color: var(--orange-active);
     justify-content: center;
     align-items: center;
     fill: var(--orange-active);
+    >svg {
+        position: absolute;
+    }
 }
 .menu__contact_wrapper {
     display: flex;
