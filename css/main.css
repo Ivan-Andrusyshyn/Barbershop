@@ -252,7 +252,7 @@ img {
   right: 0;
   overflow-y: auto;
   height: 700px;
-  min-width: 80%;
+  min-width: 75%;
   padding-left: 40px;
   padding-top: 118px;
   background-color: var(--color-white);
