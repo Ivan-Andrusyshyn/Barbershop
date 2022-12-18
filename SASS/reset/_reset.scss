@@ -4,12 +4,16 @@ body {
     letter-spacing: 0.02em;
     box-sizing: border-box;
 }
+*{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;}
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 a {
+    font-family: 'Open Sans', sans-serif;
     text-decoration:none;
 }
 h1,
@@ -22,7 +26,13 @@ ul {
     margin: 0;
 }
 button {
+     background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 12px;
 }
 img {
     display: block;
