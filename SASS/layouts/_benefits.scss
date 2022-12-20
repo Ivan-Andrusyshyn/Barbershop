@@ -25,7 +25,6 @@ flex-wrap: wrap;
 @media screen and (min-width:1200px) {
     width: 370px;
     justify-content: flex-end;
-    order: 3;
 }
 
 }
@@ -50,7 +49,7 @@ flex-wrap: wrap;
 @media screen and (min-width:1200px) {
     width: 170px;
     height: 133px;
-    padding: 20px 38px;
+    padding: 20px 24px;
 
 }
 &:nth-child(odd){
@@ -75,8 +74,17 @@ margin-right: 30px;
         top: 7px;
     }
 }
+.benefits__subtitle{
+font-size: 18px;
+line-height: calc(30 / 18);
+color:#555555;
+margin-bottom: 44px;
+@media screen and (min-width:768px) {
+    width: 500px;
+}
+}
 .benefits__text {
-    order: -1;
+   
     font-size: 11px;
     line-height: calc(15 / 11);
     color: var(--black);
@@ -97,13 +105,5 @@ margin-right: 30px;
     min-width: 470px;
 }
 }
-.benefits__subtitle{
-font-size: 18px;
-line-height: calc(30 / 18);
-color:#555555;
-margin-bottom: 44px;
-@media screen and (min-width:768px) {
-    width: 500px;
-}
-}
+
 
