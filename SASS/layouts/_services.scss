@@ -1,0 +1,192 @@
+.services {
+    background-color: #111319;
+    background-image: url(../images/prices-bg-min.png);
+    background-repeat: no-repeat;
+    background-color: #111319;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+   margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    padding: 84px 0;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { 
+background-image: url(../images/prices-x2-min.png);
+    }
+@media screen and (min-width:768px){
+    padding: 100px 0;
+    background-image: url(../images/tabl-prices-x1-min.png);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/tabl-prices-x2-min.png);
+
+    }
+}
+@media screen and (min-width:1200px){
+    padding: 120px 0;
+    max-width: 1600px;
+    background-image: url(../images/desk-prices-x1-min.png);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/desk-prices-x2-min.png);
+                
+    }
+}
+}
+
+.services-uptitle {
+  
+    font-weight: 600;
+font-size: 11px;
+line-height: calc(15 / 11);
+color: #9DA4BD99;
+text-transform: uppercase;
+display: flex;
+margin-bottom: 20px;
+flex-direction: row;
+align-items: center;
+gap: 20px;
+    &::before {
+        content:" ";
+        width: 60px;
+        height: 1px;
+        background-color:#9DA4BD99;
+    }
+}
+.services-title {
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    color: var(--color-white);
+    margin-bottom: 44px;
+@media screen and (min-width:768px) {
+    font-size: 42px;
+    line-height: calc(49.3 / 42);
+}
+}
+
+.prices-wrapper {
+   display: none;
+   justify-content: center;
+
+@media screen and (min-width:1200px) {
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+}
+}
+.prices-list__whiter {
+    background-image: linear-gradient(180deg,
+    #171A24 0%,
+   rgba(23, 26, 36, 0.2) 100%);
+}
+.services-list {
+display: none;
+@media screen and (min-width:768px) {
+    display: none;
+}
+@media screen and (min-width:1200px) {
+    width: 570px;
+    height: 240px;
+    padding: 30px 0 0 40px;
+    display: flex;
+   flex-direction: column;
+    background-image: linear-gradient(180deg,
+    #171A24 0%,
+   rgba(23, 26, 36, 0.2) 100%);
+    padding: 30px 20px;
+  }
+}
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    align-items: baseline;
+    color: #9DA4BD;
+    &::before {
+        content: " ";
+        height: 1px;
+        width: 100px;
+        order: 1;
+        flex-grow: 1;
+        background-color: #9DA4BD1F;
+    }
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+  
+    }
+.prices-text {
+    display: block;
+font-size: 14px;
+line-height: calc(20 / 14);
+font-weight: 400;
+order: 3;
+&:first-child {
+    order: -1;
+}
+@media screen and (min-width:768px) {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+}
+}
+.prices-list {
+    display: none;
+@media screen and (min-width:768px) {
+    width: 703px;
+}
+@media screen and (min-width:1200px) {
+  width: 570px;
+  height: 240px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(180deg,
+  #090B13 0%,
+  rgba(9, 11, 19, 0.2) 100%);
+
+}
+}
+.prices-btn {
+    border: 1px solid var( --orange-active);
+    color: var(--color-white);
+    padding: 12px 0;
+    border-radius: 25px;
+    width: 160px;
+    height: 40px;
+    &:focus,
+    &:hover {
+        background-color: var(--orange-active);
+            color: var(--color-white);
+    }
+}
+.prices-btn__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.prices-mob {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(180deg,
+    #090B13 0%,
+    rgba(9, 11, 19, 0.2) 100%);
+   padding: 30px 10px 30px 40px;
+    margin-bottom: 44px;
+    max-width: 100%;
+@media screen and (min-width:768px)  {
+   width: 703px;
+  max-height: 444px;
+  padding: 32px 40px;
+}
+@media screen and (min-width:1200px) {
+    display: none;
+    opacity: 0;
+}
+}

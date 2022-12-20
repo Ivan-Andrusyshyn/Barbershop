@@ -94,15 +94,27 @@
         </section>
     <section class="about">
         <div class="container container__about">
-       <div>
-         <ul>
-            <li></li>
-            <li></li>
+       <div class="about-wrapper">
+         <ul class="about-list">
+            <li class="about__item">
+                <picture>            
+                      <source srcset="./images/desk-1-x1-min.jpg 1x, ./images/desk-1-x2-min.jpg 2x"  width="270" height="445" media="(min-width: 1200px)" />
+                     <source srcset="./images/tabl-1-x1-min.jpg 1x, ./images/tabl-1-x2-min.jpg 2x "  width="330" height="235" media="(min-width: 768px)" />
+                     <img src="./images/desk-1-x2-min.jpg" alt="" width="330" height="445">
+                </picture>
+            </li>
+            <li class="about__item">
+                <picture>
+                    <source srcset="./images/desk-2-x1-min.jpg 1x, ./images/desk-2-x2-min.jpg 2x"  width="270" height="445" media="(min-width: 1200px)" />
+                     <source srcset="./images/tabl-2-x1-min.jpg  1x, ./images/tabl-2-x2-min.jpg  2x "  width="330" height="235" media="(min-width: 768px)" />
+                     <img src="./images/desk-2-x2-min.jpg" alt="" width="330" height="445">
+                </picture>
+            </li>
          </ul>
-        <div>
+        <div class="about-title__wrapper">
             <span class="about__uptitle">About</span>
             <h2 class="about__title">Best Barbershop in your city</h2>
-            <p class="about__subtitle">If you want to add more confidence to your image, you should definitely visit us.</p>
+            <p class="about__subtitle">If you want to add more confidence to your image, you should visit us</p>
             <p class="about__text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
           
             <button type="button" class="about__btn">
@@ -114,45 +126,86 @@
     </div>
     </section>
     <section class="services">
-        <div class="container">
-            <p>Spend your time with the best masters</p>
-            <h2>Services and prices</h2>
-            <ul>
-                <li>
-                <ul>
-                    <li><p>Men’s haircut</p>
-                        <p>from 300 uah.</p>
+        <div class="container ">
+            <p class="services-uptitle">Spend your time with the best masters</p>
+            <h2 class="services-title">Services and prices</h2>
+            <div class="prices-wrapper">
+            <ul class="services-list prices-list__whiter">
+                <li class="services-item">
+                    <p class="prices-text">Men’s haircut</p>  
+                    <span class="prices-text">from 300 uah.</span>
                     </li>
-                    <li><p>Beard trim</p>
-                        <p>from 300 uah.</p>
+                    <li class="services-item">
+                     <p class="prices-text">Beard trim</p>
+                        <span class="prices-text">from 300 uah.</span>
                     </li>
-                    <li><p>Mustache trim</p>
-                        <p>from 200 uah.</p>
+                    <li class="services-item">
+                        <p class="prices-text">Mustache trim</p>
+                        <span class="prices-text">from 200 uah.</span>
                     </li>
-                    <li><p>Straight razor shave</p>
-                        <p>from 200 uah.</p>
+                     <li class="services-item">
+                       <p class="prices-text">Straight razor shave</p>
+                        <span class="prices-text">from 200 uah.</span>
                     </li>
                 </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><p>Trainee’s haircut</p>
-                            <p>from 50 uah.</p>
+                    <ul class="prices-list ">
+                        <li class="services-item">
+                            <p class="prices-text">Trainee’s haircut</p>
+                            <span class="prices-text">from 50 uah.</span>
                         </li>
-                        <li><p>Haircut under the nozzle</p>
-                            <p>from 200 uah.</p>
+                        <li class="services-item">
+                            <p class="prices-text">Haircut under the nozzle</p>
+                            <span class="prices-text">from 200 uah.</span>
                         </li>
-                        <li><p>Children’s haircut (0-12 y.o.)</p>
-                            <p>from 300 uah.</p>
+                        <li class="services-item">
+                            <p class="prices-text">Children’s haircut (0-12 y.o.)</p>
+                            <span class="prices-text">from 300 uah.</span>
                         </li>
-                        <li><p>Camouflage of gray hair</p>
-                            <p>from 200 uah.</p>
+                        <li class="services-item">
+                            <p class="prices-text">Camouflage of gray hair</p>
+                            <span class="prices-text">from 200 uah.</span>
                         </li>
-                    </ul>
-                </li>
 
-            </ul>
-            <button>online-booking</button>
+                    </ul>
+              
+                </div>
+                <ul class="prices-mob">
+                    <li class="services-item">
+                        <p class="prices-text">Men’s haircut</p>  
+                        <span class="prices-text">from 300 uah.</span>
+                        </li>
+                        <li class="services-item">
+                         <p class="prices-text">Beard trim</p>
+                            <span class="prices-text">from 300 uah.</span>
+                        </li>
+                        <li class="services-item">
+                            <p class="prices-text">Mustache trim</p>
+                            <span class="prices-text">from 200 uah.</span>
+                        </li>
+                         <li class="services-item">
+                           <p class="prices-text">Straight razor shave</p>
+                            <span class="prices-text">from 200 uah.</span>
+                        </li>
+                        <li class="services-item">
+                            <p class="prices-text">Trainee’s haircut</p>
+                            <span class="prices-text">from 50 uah.</span>
+                        </li>
+                        <li class="services-item">
+                            <p class="prices-text">Haircut under the nozzle</p>
+                            <span class="prices-text">from 200 uah.</span>
+                        </li>
+                        <li class="services-item">
+                            <p class="prices-text">Children’s haircut (0-12 y.o.)</p>
+                            <span class="prices-text">from 300 uah.</span>
+                        </li>
+                        <li class="services-item">
+                            <p class="prices-text">Camouflage of gray hair</p>
+                            <span class="prices-text">from 200 uah.</span>
+                        </li>
+                        
+                </ul>
+
+         <div class="prices-btn__wrapper"> <button class="prices-btn">online-booking</button></div>  
         </div>
 
     </section>
