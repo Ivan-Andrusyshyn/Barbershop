@@ -16,7 +16,7 @@
 background-image: url(../images/prices-x2-min.png);
     }
 @media screen and (min-width:768px){
-    padding: 100px 0;
+    padding: 100px 26px 100px 39px;
     background-image: url(../images/tabl-prices-x1-min.png);
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -138,9 +138,7 @@ order: 3;
 }
 .prices-list {
     display: none;
-@media screen and (min-width:768px) {
-    width: 703px;
-}
+
 @media screen and (min-width:1200px) {
   width: 570px;
   height: 240px;
@@ -180,6 +178,10 @@ order: 3;
    padding: 30px 10px 30px 40px;
     margin-bottom: 44px;
     max-width: 100%;
+@media screen and (min-widt:480px) {
+   padding: 30px 20px 30px 40px;
+    
+}
 @media screen and (min-width:768px)  {
    width: 703px;
   max-height: 444px;

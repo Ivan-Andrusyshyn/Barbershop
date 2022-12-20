@@ -1,0 +1,109 @@
+.benefits {
+    padding: 84px 30px;
+    @media screen and (min-width:768px) {
+        padding: 100px 40px;
+    }
+    @media screen and (min-width:1200px) {
+        padding: 120px 70px 120px 100px;
+    }
+}
+.benefits-wrapper {
+    display: flex;
+    flex-direction: column;
+@media screen and (min-width:1200px) {
+    flex-direction: row-reverse;
+    gap: 130px;
+}
+}
+.benefits_list {
+display: flex;
+flex-wrap: wrap;
+@media screen and (min-width:768px) {
+    width: 680px;
+    justify-content: flex-end;
+}
+@media screen and (min-width:1200px) {
+    width: 370px;
+    justify-content: flex-end;
+    order: 3;
+}
+
+}
+.benefits__list_item {
+    background-color: #F7F7F7;
+    width: 160px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 35px;
+    text-align: center;
+@media screen and (min-width:480px) {
+    width: 193px;
+    height: 133px;
+}
+@media screen and (min-width:768px) {
+    width: 210px;
+    height: 133px;
+}
+@media screen and (min-width:1200px) {
+    width: 170px;
+    height: 133px;
+    padding: 20px 38px;
+
+}
+&:nth-child(odd){
+margin-right: 30px;
+}
+&:nth-child(even){
+    margin-top: 30px;
+    }
+}
+
+.benefits__number {
+    letter-spacing: 0.05em;
+    line-height: calc(57 / 42);
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+    >sup{
+       font-size: 16px;
+       line-height: calc(21.8 / 16);
+        color: var( --orange-active);
+        position: absolute;
+        top: 7px;
+    }
+}
+.benefits__text {
+    order: -1;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    color: var(--black);
+    font-weight: 600;
+    max-width: 122px;
+@media screen and (min-width:768px) {
+    width: 400px;
+}
+}
+.benefits__title {
+    width: 306px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: calc(32.8 / 28);
+@media screen and (min-width:1200px){
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    min-width: 470px;
+}
+}
+.benefits__subtitle{
+font-size: 18px;
+line-height: calc(30 / 18);
+color:#555555;
+margin-bottom: 44px;
+@media screen and (min-width:768px) {
+    width: 500px;
+}
+}
+
