@@ -31,7 +31,7 @@ justify-content: center;
 }
 .benefits__list_item {
     background-color: #F7F7F7;
-    width: 150px;
+    width: 140px;
     height: 123px;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ justify-content: center;
     text-align: center;
     &:nth-child(odd){
         margin-right: 20px;
-        }
+        } 
         &:nth-child(even){
             margin-top: 20px;
             }
