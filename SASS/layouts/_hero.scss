@@ -1,17 +1,7 @@
 .hero {
    
-
-     
-    // padding-left: 31px;
-    // padding-bottom: 209px;
 }
-/* .container__hero {
-    margin: 0 auto;
-} */
-/* .container__hero {
-    margin: 0 auto;
-    width: 1225px;
-} */
+
 .hero__wrapper {
 @media screen and (min-width:768px) {
     display: flex;
@@ -50,7 +40,7 @@
     line-height: calc(15 / 11);
     color: var(--black);
     letter-spacing: 0.2em;
-    pointer-events: painted;
+    cursor: pointer;
 
     &:hover,
     &:focus {
