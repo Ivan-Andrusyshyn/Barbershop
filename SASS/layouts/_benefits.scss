@@ -39,9 +39,21 @@ justify-content: center;
     justify-content: center;
     padding: 20px 35px;
     text-align: center;
+    &:nth-child(odd){
+        margin-right: 20px;
+        }
+        &:nth-child(even){
+            margin-top: 20px;
+            }
 @media screen and (min-width:480px) {
     width: 193px;
     height: 133px;
+    &:nth-child(odd){
+        margin-right: 30px;
+        }
+      &:nth-child(even){
+            margin-top: 30px;
+            }
 }
 @media screen and (min-width:768px) {
     width: 210px;
@@ -53,12 +65,7 @@ justify-content: center;
     padding: 20px 24px;
 
 }
-&:nth-child(odd){
-margin-right: 30px;
-}
-&:nth-child(even){
-    margin-top: 30px;
-    }
+
 }
 
 .benefits__number {

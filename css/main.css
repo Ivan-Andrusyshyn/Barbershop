@@ -988,10 +988,22 @@ img {
   padding: 20px 35px;
   text-align: center;
 }
+.benefits__list_item:nth-child(odd) {
+  margin-right: 20px;
+}
+.benefits__list_item:nth-child(even) {
+  margin-top: 20px;
+}
 @media screen and (min-width: 480px) {
   .benefits__list_item {
     width: 193px;
     height: 133px;
+  }
+  .benefits__list_item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .benefits__list_item:nth-child(even) {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1006,12 +1018,6 @@ img {
     height: 133px;
     padding: 20px 24px;
   }
-}
-.benefits__list_item:nth-child(odd) {
-  margin-right: 30px;
-}
-.benefits__list_item:nth-child(even) {
-  margin-top: 30px;
 }
 
 .benefits__number {
