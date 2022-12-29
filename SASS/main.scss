@@ -1,14 +1,14 @@
-@import './reset/_reset';
+@import './reset/reset';
 
 @import './utils/bases';
-@import './utils/_root';
+@import './utils/root';
 
 
 
 
-
-@import './layouts/_header';
-@import './layouts/_hero';
+@import './layouts/header';
+@import './layouts/hero';
 @import './layouts/about';
 @import './layouts/services';
-@import './layouts/benefits'
+@import './layouts/benefits';
+@import './layouts/team';
