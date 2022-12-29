@@ -66,7 +66,7 @@ img {
   margin: 0 auto;
   max-width: 100%;
   outline: 2px solid red;
-  padding: 0 39px;
+  padding: 0 31px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -76,13 +76,14 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 720px;
+    padding: 0 39px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1188,7 +1189,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 64px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1199,7 +1200,7 @@ img {
 }
 
 .team__list_item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
   .team__list_item:not(:last-child) {

@@ -78,7 +78,7 @@ margin-left: 94px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:30px;
+    gap:64px;
     }
 @media screen and (min-width:1200px) {
     
@@ -86,7 +86,7 @@ margin-left: 94px;
     gap:30px;   
 } }
  .team__list_item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 64px;
     @media screen and (min-width:768px) {
         
         margin-bottom: 0;
