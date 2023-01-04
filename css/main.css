@@ -75,7 +75,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
     padding: 0 39px;
   }
 }
@@ -117,7 +117,7 @@ img {
   right: 0;
   bottom: 0;
   z-index: 2;
-  background-color: var(--black);
+  height: 200px;
   background-color: transparent;
   display: none;
 }
@@ -414,6 +414,10 @@ img {
   background-color: var(--black);
 }
 
+.hero {
+  z-index: 222;
+}
+
 @media screen and (min-width: 768px) {
   .hero__wrapper {
     display: flex;
@@ -430,6 +434,8 @@ img {
     display: flex;
     align-items: flex-end;
     width: 100px;
+    z-index: 222;
+    opacity: 1;
   }
 }
 
@@ -1419,4 +1425,93 @@ img {
   width: 20px;
   height: 20px;
   fill: #FF6C00;
+}
+
+.colection {
+  background-color: #E5E5E5;
+  padding: 84px 0;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .colection {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .colection {
+    padding: 120px 0;
+  }
+}
+
+.uptitle__colection {
+  font-size: 8px;
+  text-transform: uppercase;
+  line-height: 1.625;
+  color: var(--black);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 71px;
+}
+.uptitle__colection::before {
+  content: " ";
+  height: 1px;
+  width: 60px;
+  background-color: #303030;
+}
+@media screen and (min-width: 480px) {
+  .uptitle__colection {
+    font-size: 11px;
+    line-height: 1.3636363636;
+  }
+}
+@media screen and (min-width: 768px) {
+  .uptitle__colection {
+    margin-bottom: 44px;
+  }
+}
+.title_hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.colection-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.colection-list > li {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .colection-list {
+    flex-direction: row;
+  }
+}
+
+.colection__item {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 480px) {
+  .colection__item {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .colection__item {
+    max-height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
