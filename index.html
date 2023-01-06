@@ -397,43 +397,65 @@
            </ul>
         </div>
     </section>
-    <footer class="footer">
+    <section class="booking">
         <div class="container footer-wrapper">
             <div class="form-wrapper">
-           <h2 class="h2__title title_white">Online-booking</h2>
+           <h2 class="footer-title">Online-booking</h2>
 
                 <form class="footer-form">
-           
-                    <label for="name-input" class="lable-footer">Name</label>
-                    <input type="text" name="online__name" id="name-input" class="input-footer">
-                    <label for="tel-input" class="lable-footer">Phone*</label>
+                    <div class="farm-wrapper__form">
+                    <div class="name-wrapper__form">
+                        <input type="text" name="online__name" id="name-input" class="input-footer">
+                        <label for="name-input" class="lable-footer form-name">Name*</label>
+                        
+                    </div>
+               
+                        <div class="tel-wrapper__form">
                      <input type="text" name="online__tel" id="tel-input" class="input-footer">   
-            
-                <label for="text__message"class="input-footer">Message</label>
+                     <label for="tel-input" class="lable-footer farm-tel">Phone*</label>
+                        
+                    </div>
+                </div>
+                        <div class="message-wrapper">
                <textarea name="text__message" id="text__message" class="footer-text"></textarea>
-            <button class="footer-form__btn">send</button> 
-            </form>
+               <label for="text__message"class="lable-message">Message</label>
+                            
             </div>
-            <div>
-                <address>
+           
+             <div class="input-btn__wrapper"> <button class="footer-form__btn">send</button> </div> 
+            </form>
+
+            </div>
+            
+            <div class="contacts">
+                <h2 class="contact-title">Contacts</h2>
+               <div class="address-wrapper"> <address class="address-footer">
                     <ul class="footer-items">
                         <li class="footer-item">
+                            <svg width="24px" height="24px" class="svg-address" ><use href="./images/icons.svg#icon-map-pin"></use></svg>
                             <a class="footer-address cursor" href="https://goo.gl/maps/aHwAYJVr8grFMFeF8" target="_blank"
-                                rel="noopener noreferrer">st. Vasilkivska, 7A
-                                Kyiv, 08132</a>
+                                rel="noopener noreferrer">st. Vasilkovaya, 7A Kiev, 08132</a>
                         </li>
+                         <li class="footer-item">
+                            <svg width="24px" height="24px" class="svg-address"><use href="./images/icons.svg#icon-phone"></use></svg>
+                            <a class="footer-phone cursor" href="tel:+380441111111">+38 044 111 11 11</a></li>
                         <li class="footer-item">
+                            <svg width="24px" height="24px"  class="svg-address"><use href="./images/icons.svg#icon-mail"></use></svg>
                             <a class="footer-mail cursor"
                                 href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                        <li class="footer-item">
-                            <a class="footer-phone cursor" href="tel:+380441111111">+38 044 111 11 11</a></li>
+                       
                     </ul>
     
                 </address>
-                <p>Working hours</p>
-                <p>Every day from 9:00 to 22:00</p>
+                <div class="times-wrapper">
+                <p class="uptitle__team_white">Working hours</p>
+                <p class="footer-time">Every day from 9:00 to 22:00</p>
             </div>
         </div>
+        </div>
+    </div>
+    </section>
+        <footer class="footer">
     </footer>
 
     </main>
