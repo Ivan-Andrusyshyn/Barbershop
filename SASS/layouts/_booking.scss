@@ -1,8 +1,6 @@
 .booking {
     padding: 84px 0;
-    max-width: 100%;
     margin: 0 auto;
-    width: 100wv;
 background-position-y: bottom;
 background-image: url(../images/mob-booking-x1.png);
 background-size: 100% 50%;
@@ -150,7 +148,7 @@ margin-bottom: 44px;
     cursor: pointer;
 height: 20px;
 outline: none;
-width: 318px;
+width: 100%;
 border: none;
 background-color: transparent;
 border-bottom: 1px solid #9DA4BD66 ;
@@ -199,7 +197,7 @@ width: 330px;
     transition: 300ms  border linear;
     cursor: pointer;
     height: 50px;
-width: 318px;
+    width: 100%;
 border: none;
 outline: none;
 background-color: transparent;
