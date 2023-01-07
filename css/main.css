@@ -1537,7 +1537,7 @@ img {
 }
 .input-footer:focus + .lable-footer {
   color: #ffffff;
-  transform: translateY(-10px);
+  transform: translateY(-12px);
 }
 .input-footer:hover + .lable-footer {
   color: #ffffff;
@@ -1597,7 +1597,7 @@ img {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 11px;
-  top: -10px;
+  top: -8px;
   line-height: 1.3636363636;
   letter-spacing: 0.1em;
   color: rgba(157, 164, 189, 0.4);
@@ -1606,7 +1606,7 @@ img {
 }
 .lable-message .form-text:hover, .form-text:focus + .lable-message {
   color: #ffffff;
-  transform: translateY(-10px);
+  transform: translateY(-12px);
 }
 
 .form-text {
