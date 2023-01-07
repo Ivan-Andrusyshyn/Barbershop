@@ -3,31 +3,30 @@
     max-width: 100%;
     margin: 0 auto;
 background-position-y: bottom;
-background-image: url(../../images/mob-booking-x1.png);
-background-size:768px 496px ;
+background-image: url(../images/mob-booking-x1.png);
+background-size: 100% 50%;
 background-repeat: no-repeat;
 background-color: #191C26;
 @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-background-image: url(../../images/mob-booking-x2.png);
+background-image: url(../images/mob-booding-x2.png);
 
     }
 @media screen and (min-width:480px) {
-    background-image: url(../../images/tab-booking-x1.png);
+    background-image: url(../images/tab-booking-x1.png);
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../../images/tab-booking-x2.png);
-        ;
-
+        background-image: url(../images/tab-booking-x2.png);
+        
     }
 }
 @media screen and (min-width:768px) {
     padding: 100px 0;
-    background-image: url(../../images/desk-booking-x1.png);
+    background-image: url(../images/desk-booking-x1.png);
     background-size: 100% 50%;
 }
  @media screen and (min-width:1200px){
@@ -36,20 +35,22 @@ background-image: url(../../images/mob-booking-x2.png);
     background-size: 50% 640px;
 background-position-y: bottom;
 background-position-x: right;
-background-image: url(../../images/desk-booking-x1.png);
+background-image: url(../images/desk-booking-x1.png);
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    background-image: url(../../images/desk-booking-x2.png);
-    ;
-
+    background-image: url(../images/desk-booking-x2.png);
 }
 }
 }
 .booking-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width:1200px){
+        justify-content: start;
+    }   
     @media screen and (min-width:1200px){
         display: flex;
         flex-direction: row;
@@ -57,9 +58,14 @@ background-image: url(../../images/desk-booking-x1.png);
     }   
 }
 .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 0 84px 0;
     @media screen and (min-width:768px) {
         padding: 0 0 100px 0;
+    justify-content: start;
+
     }
      @media screen and (min-width:1200px){
         padding: 0 ;
@@ -67,10 +73,8 @@ background-image: url(../../images/desk-booking-x1.png);
     }
 }
 .footer-title{
-    justify-content: center;
-    margin: 0 auto;
-    display: block;
     text-align: center;
+    display: block;
     width: 418px;
     margin-bottom: 44px;
     font-size: 28px;
@@ -80,7 +84,12 @@ background-image: url(../../images/desk-booking-x1.png);
 @media screen and (min-width:480px) {
         font-size: 42px;
         line-height: calc(49 / 42);
+
     }  
+@media screen and (min-width:768px) {
+    text-align: left;
+    
+}
 @media screen and (min-width:1200px){
     margin-bottom: 44px;
    
