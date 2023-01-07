@@ -41,7 +41,7 @@
             <a href="tel:+38 0441111111" class="header__number">
                 +38 044 111 11 11
             </a>
-            <button class="header__btn">
+            <button class="header__btn"data-modal-open>
                 Online-booking
             </button>
           </div> 
@@ -398,7 +398,7 @@
         </div>
     </section>
     <section class="booking">
-        <div class="container footer-wrapper">
+        <div class="container booking-wrapper">
             <div class="form-wrapper">
            <h2 class="footer-title">Online-booking</h2>
 
@@ -417,7 +417,7 @@
                     </div>
                 </div>
                         <div class="message-wrapper">
-               <textarea name="text__message" id="text__message" class="footer-text"></textarea>
+               <textarea name="text__message" id="text__message" class="form-text"></textarea>
                <label for="text__message"class="lable-message">Message</label>
                             
             </div>
@@ -456,9 +456,74 @@
     </div>
     </section>
         <footer class="footer">
+          <div class="container">
+            <div class="footer-soc__wrapper">
+            <div class="footer-wrapper">
+                <span><svg width="12px" height="12px"><use href="./images/icons.svg#icon-Group"></use></svg></span>
+                <span class="footer-text">Copyright 2020</span>
+            </div>
+            <ul class="footer-soc__list">
+                <li class="footer-soc__item">
+                    <a href="#" class="footer__link">Instagram</a></li>
+                <li class="footer-soc__item">
+                    <a href="#" class="footer__link">Youtube</a></li>
+            </ul>
+          </div>  
+          </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p class="modal-title">Leave your data, we will call you back</p>
+          <form action="">
+            <div class="modal-wraper">
+              <label for="name" class="modal-label">Name</label>
+              <input type="text" name="name" id="name" class="modal-input">
+              <svg width="18px" height="18px" class="modal-svg-input">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+            <div class="modal-wraper">
+              <label for="phone" class="modal-label">Phone</label>
+              <input type="tel" name="tel" id="phone" class="modal-input">
+              <svg width="18px" height="18px" class="modal-svg-input">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+            <div class="modal-wraper">
+              <label for="email-input" class="modal-label">Mail</label>
+              <input type="email" name="email" id="email-input" class="modal-input">
+              <svg width="18px" height="18px" class="modal-svg-input">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+            <div class="textarea-wraper">
+              <label for="user-comments" class="modal-label">Comment</label>
+              <textarea name="user-comment" id="user-comments" class="modal-textarea" placeholder="Enter text "></textarea>
+            </div>
+      
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="modal-checkbox" id="modal-checkbox" class="checkbox hide">
+              <label for="modal-checkbox" class="modal-checkbox">
+                <span><svg width="16px" height="15px">
+                    <use href="./images/icons.svg#icon-cheked"></use>
+                  </svg>
+            </span>I agree with the mailing and accept <a href="#" class="checkbox-link"> Terms of the treaty</a>
+              </label>
+            </div>
+            <div class="input-button__wrapper">
+            <button type="submit" class="input-button">Відправити</button>
+        </div>
+         
+        </form>
 
+          <button class="close-modal" data-modal-close><svg class="close-svg" width="20px" height="20px">
+            <use href="./images/icons.svg#icon-close-block"></use>
+            </svg>
+          </button> 
+        </div>
+      </div>
     </main>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
