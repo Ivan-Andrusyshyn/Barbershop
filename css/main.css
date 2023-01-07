@@ -1474,7 +1474,6 @@ img {
 }
 
 .footer-title {
-  text-align: center;
   display: block;
   width: 418px;
   margin-bottom: 44px;
@@ -1487,6 +1486,7 @@ img {
   .footer-title {
     font-size: 42px;
     line-height: 1.1666666667;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1694,7 +1694,6 @@ img {
   justify-content: center;
   margin: 0 auto;
   display: block;
-  text-align: center;
   margin-bottom: 44px;
   font-size: 28px;
   line-height: 1.3928571429;
@@ -1705,6 +1704,7 @@ img {
   .contact-title {
     font-size: 42px;
     line-height: 1.1666666667;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
