@@ -2,6 +2,7 @@
     padding: 84px 0;
     max-width: 100%;
     margin: 0 auto;
+    width: 100wv;
 background-position-y: bottom;
 background-image: url(../images/mob-booking-x1.png);
 background-size: 100% 50%;
@@ -134,7 +135,7 @@ left: 0;
 }
 .tel-wrapper__form {
     position: relative;
-    margin-bottom: 119px;
+    margin-bottom: 44px;
 }
 .message-wrapper {
     position: relative;
@@ -171,19 +172,23 @@ width: 330px;
 }
 
 .lable-message {
-    transition: 300ms  color linear;
+    transition: 300ms  linear;
+    transition-property: transform, color;
+   
     text-transform: uppercase;
     font-weight: 600;
     font-size: 11px;
-    top: -60px;
+    top: -10px;
     line-height: calc(15 / 11);
     letter-spacing: 0.1em;
     color: #9DA4BD66;  
     position: absolute;
     left: 0;
-    .footer-text:hover,
-    .footer-text:focus +& {
+    .form-text:hover,
+    .form-text:focus +& {
         color: #ffffff;
+    transform: translateY(-10px);
+
     }
 }
 .form-text {
@@ -193,7 +198,7 @@ width: 330px;
     padding-left: 10px;
     transition: 300ms  border linear;
     cursor: pointer;
-    height: 20px;
+    height: 50px;
 width: 318px;
 border: none;
 outline: none;
