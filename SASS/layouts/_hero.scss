@@ -60,19 +60,19 @@
     flex-direction: column;
     gap: 20px;
     height: 580px;
-    width: 480px;
+    max-width: 100%;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #9DA4BD99;
     background-image:
-     url(../../images/hero-tabl-x1-min.jpg);
+     url(../images/hero-tabl-x1-min.jpg);
  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) { 
-background-image: url(../../images/hero-tabl-x2-min.jpg);
+background-image: url(../images/hero-tabl-x2-min.jpg);
     }
 
 @media screen and (min-width:480px) {

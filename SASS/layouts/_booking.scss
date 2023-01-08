@@ -5,7 +5,8 @@ background-position-y: bottom;
 background-image: url(../images/mob-booking-x1.png);
 background-size: 100% 50%;
 background-repeat: no-repeat;
-width: 480px;
+max-width: 100%;
+
 background-color: #191C26;
 @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),

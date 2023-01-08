@@ -121,7 +121,7 @@ background-color: var(--orange-active);
 
 
 .mob-header {
-    min-width: 480px;
+   max-width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;

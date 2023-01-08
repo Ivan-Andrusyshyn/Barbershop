@@ -240,7 +240,7 @@ img {
 }
 
 .mob-header {
-  min-width: 480px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
@@ -484,17 +484,17 @@ img {
   flex-direction: column;
   gap: 20px;
   height: 580px;
-  width: 480px;
+  max-width: 100%;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: rgba(157, 164, 189, 0.6);
-  background-image: url(../../images/hero-tabl-x1-min.jpg);
+  background-image: url(../images/hero-tabl-x1-min.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url(../../images/hero-tabl-x2-min.jpg);
+    background-image: url(../images/hero-tabl-x2-min.jpg);
   }
 }
 @media screen and (min-width: 480px) {
@@ -737,7 +737,7 @@ img {
   background-size: cover;
   background-position: center;
   margin: 0 auto;
-  width: 480px;
+  max-width: 100%;
   font-family: "Open Sans", sans-serif;
   padding: 84px 0;
 }
@@ -1115,7 +1115,7 @@ img {
 }
 
 .team {
-  width: 480px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #F7F7F7;
   padding: 84px 0;
@@ -1334,7 +1334,6 @@ img {
 }
 
 .colection {
-  width: 480px;
   margin: 0 auto;
   padding: 84px 0;
 }
@@ -1433,7 +1432,7 @@ img {
   background-image: url(../images/mob-booking-x1.png);
   background-size: 100% 50%;
   background-repeat: no-repeat;
-  width: 480px;
+  max-width: 100%;
   background-color: #191C26;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1859,7 +1858,7 @@ img {
 }
 
 .footer {
-  width: 480px;
+  max-width: 100%;
   background-color: #F7F7F7;
   padding: 44px 0;
   margin: 0 auto;
