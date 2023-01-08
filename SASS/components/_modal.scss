@@ -26,8 +26,7 @@
     border: 1px solid#FF6C00;
     transition: transform 350ms linear, background-color 350ms linear;
     .backdrop.is-hidden &{
-            transform: translate(-50%, -50%) scale(1.5) rotate(360deg) skewX(360deg);
-            background-image: linear-gradient(to right, #0057B7, #FFDD00);
+            transform: translate(-50%, -50%) scale(1.5)  skewX(360deg);
         }
  @media screen and (min-width:480px){
     width: 450px;

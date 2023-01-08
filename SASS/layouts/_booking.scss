@@ -5,6 +5,7 @@ background-position-y: bottom;
 background-image: url(../images/mob-booking-x1.png);
 background-size: 100% 50%;
 background-repeat: no-repeat;
+width: 480px;
 background-color: #191C26;
 @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -14,6 +15,7 @@ background-image: url(../images/mob-booding-x2.png);
 
     }
 @media screen and (min-width:480px) {
+    width: auto;
     background-image: url(../images/tab-booking-x1.png);
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -56,7 +58,7 @@ background-image: url(../images/desk-booking-x1.png);
         gap: 130px;
     }   
 }
-.form-wrapper {
+.form-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +81,8 @@ background-image: url(../images/desk-booking-x1.png);
     line-height: calc(39 / 28);
     letter-spacing: 0.05em;
     color: #ffffff;
+    text-align: center;
+
 @media screen and (min-width:480px) {
         font-size: 42px;
         line-height: calc(49 / 42);
@@ -197,7 +201,7 @@ width: 330px;
     transition: 300ms  border linear;
     cursor: pointer;
     height: 50px;
-    width: 100%;
+   width: 100%;
 border: none;
 outline: none;
 background-color: transparent;
@@ -271,6 +275,7 @@ min-width: 690px;
 }
 }
 .contact-title {
+    text-align: center;
     justify-content: center;
     margin: 0 auto;
     display: block;
@@ -282,7 +287,6 @@ min-width: 690px;
 @media screen and (min-width:480px) {
     font-size: 42px;
     line-height: calc(49 / 42);
-    text-align: center;
 
 }
 @media screen and (min-width:768px) {

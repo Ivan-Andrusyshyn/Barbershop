@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center;
    margin: 0 auto;
+   width: 480px;
     font-family: 'Open Sans', sans-serif;
     padding: 84px 0;
     @media (min-device-pixel-ratio: 2),
@@ -14,6 +15,11 @@
     (min-resolution: 2dppx) { 
 background-image: url(../images/prices-x2-min.png);
     }
+    @media screen and (min-width:480px){
+    width: auto;
+        
+    }
+
 @media screen and (min-width:768px){
     padding: 100px 26px 100px 39px;
     background-image: url(../images/tabl-prices-x1-min.png);
@@ -192,9 +198,8 @@ line-height: calc(20 / 14);
    padding: 30px 10px 30px 40px;
     margin-bottom: 44px;
     max-width: 100%;
-@media screen and (min-widt:480px) {
+@media screen and (min-width:480px) {
    padding: 30px 20px 30px 40px;
-    
 }
 @media screen and (min-width:768px)  {
    width: 703px;
