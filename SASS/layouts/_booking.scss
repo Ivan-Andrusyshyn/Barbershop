@@ -7,41 +7,32 @@ background-size: 100% 50%;
 background-repeat: no-repeat;
 max-width: 100%;
 
-background-color: #191C26;
-@media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+background-color:var(--bg-booking);
+@include retina {
 background-image: url(../images/mob-booding-x2.png);
 
     }
-@media screen and (min-width:480px) {
+@include mobile {
     width: auto;
     background-image: url(../images/tab-booking-x1.png);
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @include retina {
         background-image: url(../images/tab-booking-x2.png);
         
     }
 }
-@media screen and (min-width:768px) {
+@include tabl {
     padding: 100px 0;
     background-image: url(../images/desk-booking-x1.png);
     background-size: 100% 50%;
 }
- @media screen and (min-width:1200px){
+@include desk{
     padding: 130px 0;  
     max-width: 1600px;
     background-size: 50% 640px;
 background-position-y: bottom;
 background-position-x: right;
 background-image: url(../images/desk-booking-x1.png);
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@include retina{
     background-image: url(../images/desk-booking-x2.png);
 }
 }
@@ -50,10 +41,9 @@ background-image: url(../images/desk-booking-x1.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media screen and (min-width:1200px){
+   
+    @include desk{
         justify-content: start;
-    }   
-    @media screen and (min-width:1200px){
         display: flex;
         flex-direction: row;
         gap: 130px;
@@ -64,12 +54,12 @@ background-image: url(../images/desk-booking-x1.png);
     flex-direction: column;
     justify-content: center;
     padding: 0 0 84px 0;
-    @media screen and (min-width:768px) {
+@include tabl{
         padding: 0 0 100px 0;
     justify-content: start;
 
     }
-     @media screen and (min-width:1200px){
+    @include desk{
         padding: 0 ;
 
     }
@@ -80,19 +70,19 @@ background-image: url(../images/desk-booking-x1.png);
     font-size: 28px;
     line-height: calc(39 / 28);
     letter-spacing: 0.05em;
-    color: #ffffff;
+    color: var(--white);
     text-align: center;
 
-@media screen and (min-width:480px) {
+@include mobile {
         font-size: 42px;
         line-height: calc(49 / 42);
         text-align: center;
     }  
-@media screen and (min-width:768px) {
+@include tabl{
     text-align: left;
     
 }
-@media screen and (min-width:1200px){
+@include desk{
     margin-bottom: 44px;
    
     min-width: 470px;
@@ -105,7 +95,7 @@ background-image: url(../images/desk-booking-x1.png);
    
 }
 .farm-wrapper__form {
-    @media screen and (min-width:768px) {
+   @include tabl {
         display: flex;
         gap: 30px;
     }
@@ -156,20 +146,20 @@ width: 100%;
 border: none;
 background-color: transparent;
 border-bottom: 1px solid #9DA4BD66 ;
-@media screen and (min-width:480px) {
+@include mobile {
 width: 418px;
     
 }
-@media screen and (min-width:768px) {
+@include tabl{
 width: 330px;  
 }
-@media screen and (min-width:1200px) {
+@include desk {
     width: 270px;   
     }
     &:hover,
     &:focus {
-        border-bottom: 1px solid #ffffff ;
-        color: #ffffff;
+        border-bottom: 1px solid var(--white) ;
+        color: var(--white);
         }
 }
 
@@ -207,14 +197,14 @@ outline: none;
 background-color: transparent;
 border-bottom: 1px solid #9DA4BD66 ;
 color: #ffffff;
-@media screen and (min-width:480px) {
+@include mobile {
     width: 418px;   
     }
-@media screen and (min-width:768px) {
+    @include tabl{
 min-width: 690px;
    
 }
-@media screen and (min-width:1200px) {
+@include desk {
     min-width: 570px;
        
     }
@@ -227,7 +217,7 @@ min-width: 690px;
 .input-btn__wrapper {
     display: flex;
     justify-content: center;
-    @media screen and (min-width:768px) {
+    @include tabl{
        justify-content: start;
     }
 }
@@ -238,17 +228,17 @@ min-width: 690px;
     font-weight: 600;
     background-color: transparent;
     border-radius: 25px;
-    border: 1px solid #FF6C00;
+    border: 1px solid var(--orange);
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.09px;
     line-height: calc(16 / 12);
-    color: #ffffff;
+    color:var(--white);
     padding: 12px 0;
     text-align: center;
     &:hover,
     &:focus {
-    background-color:#FF6C00;
+    background-color:var(--orange);
 }
 
 }
@@ -256,20 +246,20 @@ min-width: 690px;
 .contacts {
   
    padding-top: 84px;
-    @media screen and (min-width:768px) {
+   @include tabl{
         padding-top: 100px;
     }
-     @media screen and (min-width:1200px){
+    @include desk {
         padding-top: 0;
 
     }
 }
 .address-wrapper {
-    @media screen and (min-width:768px) {
+    @include tabl{
         display: flex;
         gap: 30px;
     }
-@media screen and (min-width:1200px) {
+@include desk {
     flex-direction: column;
     gap: 0;
 
@@ -285,15 +275,15 @@ min-width: 690px;
     line-height: calc(39 / 28);
     letter-spacing: 0.05em;
     color: #ffffff;
-@media screen and (min-width:480px) {
+@include mobile {
     font-size: 42px;
     line-height: calc(49 / 42);
 
 }
-@media screen and (min-width:768px) {
+@include tabl{
     text-align:left;
 }
-@media screen and (min-width:1200px){ 
+@include desk{ 
     min-width: 470px;
     margin-left: 0;
     margin-bottom: 40px;
@@ -306,7 +296,7 @@ min-width: 690px;
     gap: 20px;
     max-width: 390px;
 
-@media screen and (min-width:768px) {
+@include tabl{
     width: 330px;
     
 }
@@ -314,7 +304,7 @@ min-width: 690px;
 .footer-item {
     display: flex;
     align-items: center;
-    stroke:#9DA4BD;
+    stroke:var(--gray100);
     fill: transparent;
 }
 .svg-address {
@@ -322,7 +312,7 @@ min-width: 690px;
 }
 .address-footer {
     margin-bottom: 44px;
-    @media screen and (min-width:1200px) {
+    @include desk {
         margin-bottom: 70px;
 
         }
@@ -332,17 +322,17 @@ min-width: 690px;
     max-width: 100%;
     display: block;
     font-family: 'Open Sans', sans-serif;
-    color: #9DA4BD;
+    color:var(--gray100);
     font-size: 18px;
     line-height: calc(30 / 18);
     font-weight: 700;
-    @media screen and (min-width:768px) {
+    @include tabl {
     max-width: 250px;
     }
 }
 .footer-mail {
     font-family: 'Open Sans', sans-serif;
-    color: #9DA4BD;
+    color:var(--gray100);
     font-size: 18px;
     line-height: calc(30 / 18);
     font-weight: 400; 
@@ -351,7 +341,7 @@ min-width: 690px;
 }
 .footer-phone {
     font-family: 'Open Sans', sans-serif;
-    color: #9DA4BD;
+    color:var(--gray100);
     font-size: 18px;
     line-height: calc(30 / 18);
     font-weight: 400;
@@ -362,7 +352,7 @@ min-width: 690px;
     font-size: 11px;
     text-transform: uppercase;
     line-height: calc(13 / 8);
-    color:#ffffff;
+    color:var(--white);
     font-weight: 600;
     display: flex; 
     align-items: center;
@@ -373,7 +363,7 @@ min-width: 690px;
     height: 1px;
     width: 60px;
     background-color: #9DA4BD66;}
-@media screen and (min-width:480px) {
+@include mobile {
     font-size: 11px;
     line-height: calc(15 / 11);
 }
@@ -381,7 +371,7 @@ min-width: 690px;
 }
 .footer-time {
     font-family: 'Open Sans', sans-serif;
-    color: #9DA4BD;
+    color:var(--gray100);
     font-size: 18px;
     line-height: calc(30 / 18);
     font-weight: 400;

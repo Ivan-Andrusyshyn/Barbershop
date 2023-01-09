@@ -1,13 +1,12 @@
 .footer {
     max-width: 100%;
-
-    background-color: #F7F7F7;
+    background-color:var(--bg-team);
     padding: 44px 0;
     margin: 0 auto;
-    @media screen and (min-width:480px) {
+   @include mobile{
         width: auto;
     }
-@media screen and (min-width:1200px) {
+@include desk{
     padding: 56px 0;
     max-width: 1600px;
 }
@@ -16,12 +15,12 @@
     display: flex;
     flex-direction: column;
    gap: 20px;
-    @media screen and (min-width:480px) {
+   @include mobile{
         flex-direction: row;
         justify-content: start;
         gap: 0;
     }
-@media screen and (min-width:768px) {
+@include tabl {
     justify-content: space-between;
     text-align: center;
    
@@ -30,12 +29,11 @@
 .footer-wrapper {
     display: flex;
     align-items: center;
-    gap: 8px;
-  @media screen and (min-width:480px) {
+    gap: 8px;   @include mobile{
   margin-top: 35px;
     
   }
-@media screen and (min-width:768px) {
+  @include tabl {
   margin-top: 0;
     
 }
@@ -45,7 +43,7 @@
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15 / 11);
-    color: #9DA4BD;
+    color:var(--gray100);
     letter-spacing: 0.2em;  
 }
 .footer-soc__list {
@@ -57,13 +55,12 @@
         content: " ";
     width: 40px;
     height: 1px;
-    background-color: var(--black);
-    @media screen and (min-width:480px) {
-        min-width: 60px;
-    }       
+    background-color: var(--black30);
+      
     }
-    @media screen and (min-width:480px) {
+    @include mobile {
         gap: 40px;    
+        min-width: 60px;
     }
 }
 .footer__link {
@@ -77,6 +74,6 @@
     cursor: pointer;
     &:hover,
     &:focus {
-    color: var(--orange-active);
+    color: var(--orange);
 }
 }

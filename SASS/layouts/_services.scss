@@ -10,36 +10,27 @@
  max-width: 100%;
     font-family: 'Open Sans', sans-serif;
     padding: 84px 0;
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) { 
+   @include retina { 
 background-image: url(../images/prices-x2-min.png);
     }
-    @media screen and (min-width:480px){
+   @include mobile{
     width: auto;
         
     }
 
-@media screen and (min-width:768px){
+@include tabl{
     padding: 100px 26px 100px 39px;
     background-image: url(../images/tabl-prices-x1-min.png);
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @include retina {
         background-image: url(../images/tabl-prices-x2-min.png);
 
     }
 }
-@media screen and (min-width:1200px){
+@include desk{
     padding: 120px 0;
     max-width: 1600px;
     background-image: url(../images/desk-prices-x1-min.png);
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+   @include retina {
         background-image: url(../images/desk-prices-x2-min.png);
                 
     }
@@ -51,7 +42,7 @@ background-image: url(../images/prices-x2-min.png);
     font-weight: 600;
 font-size: 8px;
 line-height: calc(13 / 8);
-color: #9DA4BD99;
+color:var(--gray);
 text-transform: uppercase;
 display: flex;
 margin-bottom: 20px;
@@ -62,9 +53,9 @@ gap: 20px;
         content:" ";
         width: 60px;
         height: 1px;
-        background-color:#9DA4BD99;
+        background-color:var(--gray);
     }
-@media screen and (min-width:480px) {
+@include mobile {
     font-size: 11px;
 line-height: calc(15 / 11);
 }
@@ -72,16 +63,16 @@ line-height: calc(15 / 11);
 .services-title {
     font-size: 28px;
     line-height: calc(34 / 28);
-    color: var(--color-white);
+    color: var(--white);
     margin-bottom: 44px;
     text-align:left;
-@media screen and (min-width:480px) {
+    @include mobile     {
     text-align: center;
     font-size: 40px;
     line-height: calc(47 / 40);
     text-align: start;
 }
-@media screen and (min-width:768px) {
+@include tabl {
     font-size: 42px;
     line-height: calc(49.3 / 42);
     text-align: start;
@@ -92,7 +83,7 @@ line-height: calc(15 / 11);
    display: none;
    justify-content: center;
 
-@media screen and (min-width:1200px) {
+@include desk{
     justify-content: space-between;
     display: flex;
     gap: 30px;
@@ -106,10 +97,10 @@ line-height: calc(15 / 11);
 }
 .services-list {
 display: none;
-@media screen and (min-width:768px) {
+@include tabl{
     display: none;
 }
-@media screen and (min-width:1200px) {
+@include desk {
     width: 570px;
     height: 240px;
     padding: 30px 0 0 40px;
@@ -126,7 +117,7 @@ display: none;
     justify-content: space-between;
     flex-direction:row;
     align-items: baseline;
-    color: #9DA4BD;
+    color: var(--gray100);
     &::before {
         content: " ";
         height: 1px;
@@ -148,11 +139,11 @@ order: 3;
 &:first-child {
     order: -1;
 }
-@media screen and (min-width:480px) {
+@include mobile {
     font-size: 14px;
 line-height: calc(20 / 14);
 }
-@media screen and (min-width:768px) {
+@include tabl{
     font-size: 18px;
     line-height: calc(30 / 18);
 }
@@ -160,7 +151,7 @@ line-height: calc(20 / 14);
 .prices-list {
     display: none;
 
-@media screen and (min-width:1200px) {
+@include desk{
   width: 570px;
   height: 240px;
   padding: 30px 20px;
@@ -174,16 +165,16 @@ line-height: calc(20 / 14);
 }
 .prices-btn {
     font-weight: 600;
-    border: 1px solid var( --orange-active);
-    color: var(--color-white);
+    border: 1px solid var( --orange);
+    color: var(--white);
     padding: 12px 0;
     border-radius: 25px;
     width: 160px;
     height: 40px;
     &:focus,
     &:hover {
-        background-color: var(--orange-active);
-            color: var(--color-white);
+        background-color: var(--orange);
+            color: var(--white);
     }
 }
 .prices-btn__wrapper {
@@ -200,15 +191,15 @@ line-height: calc(20 / 14);
    padding: 30px 10px 30px 40px;
     margin-bottom: 44px;
     max-width: 100%;
-@media screen and (min-width:480px) {
+@include mobile{
    padding: 30px 20px 30px 40px;
 }
-@media screen and (min-width:768px)  {
+@include tabl {
    width: 703px;
   max-height: 444px;
   padding: 32px 40px;
 }
-@media screen and (min-width:1200px) {
+@include desk{
     display: none;
     opacity: 0;
 }

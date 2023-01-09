@@ -1,11 +1,11 @@
 .colection {
     margin: 0 auto;
     padding: 84px 0;
-@media screen and (min-width:768px) {
+@include tabl {
     padding: 100px 0;
     width: auto;
 }
- @media screen and (min-width:1200px){
+@include desk{
     padding: 120px 0;  
 }
 }
@@ -13,7 +13,7 @@
     font-size: 8px;
     text-transform: uppercase;
     line-height: calc(13 / 8);
-    color: var(--black);
+    color: var(--black30);
     font-weight: 600;
     display: flex; 
     align-items: center;
@@ -24,18 +24,18 @@
     content: " ";
     height: 1px;
     width: 60px;
-    background-color: #303030;}
-@media screen and (min-width:480px) {
+    background-color:var(--black30);}
+@include mobile {
     width: 400px;
     font-size: 11px;
     line-height: calc(15 / 11);
 }
-@media screen and (min-width:768px) {
+@include tabl{
 margin-bottom: 44px;
 text-align: left;
 
 }
-@media screen and (min-width:1200px) {
+@include desk{
     }
 }
 .title_hidden {
@@ -59,17 +59,17 @@ text-align: left;
     >li {
         max-width: 100%;
     }
-@media screen and (min-width:768px) {
+@include tabl {
     flex-direction: row;
 }
 }
 .colection__item {
     max-width: 100%;
     height: auto;
- @media screen and (min-width:480px) {
+@include mobile{
          max-width: 450px;  
      }
- @media screen and (min-width:1200px) {  
+@include desk {  
      max-height: 100%;
  }
 }

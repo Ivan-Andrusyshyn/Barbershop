@@ -1,16 +1,16 @@
 .team {
     max-width: 100%;
     margin: 0 auto;
-    background-color:#F7F7F7;
+    background-color:var(--bg-team);
    padding: 84px 0 ;
-@media screen and (min-width:480px) {
+@include mobile{
     width: auto;
 }
-@media screen and (min-width:768px) {
+@include tabl {
     padding: 100px 0;
    
 }
-    @media screen and (min-width:1200px){
+  @include desk{
     padding: 120px 0;
     
 }
@@ -20,14 +20,14 @@
     border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
     padding-bottom: 30px;
-@media screen and (min-width:480px) {
+@include mobile{
     max-width: 418px;
     
 }
-    @media screen and (min-width:768px) {
+   @include tabl {
           max-width: 450px;
         }
-        @media screen and (min-width:1200px){
+        @include desk{
               max-width: 370px;
           }
 }
@@ -36,7 +36,7 @@
     font-size: 8px;
     text-transform: uppercase;
     line-height: calc(13 / 8);
-    color: var(--black);
+    color: var(--black30);
     font-weight: 600;
     display: flex; 
     align-items: center;
@@ -47,16 +47,16 @@
     content: " ";
     height: 1px;
     width: 60px;
-    background-color: #303030;}
-@media screen and (min-width:480px) {
+    background-color: var(--black30);}
+@include mobile {
     font-size: 11px;
     line-height: calc(15 / 11);
 }
-@media screen and (min-width:768px) {
+@include tabl {
     margin-left: 114px;
 
 }
-@media screen and (min-width:1200px) {
+@include desk {
     margin-left: 0;
     }
 }
@@ -67,11 +67,11 @@
     line-height: calc(32.8 / 28);
     letter-spacing: 0.05em;
     margin-bottom: 44px;
-    @media screen and (min-width:768px) {
+    @include tabl{
     margin-left: 114px;
     font-size: 42px;
     }
-@media screen and (min-width:1200px){
+@include desk{
     font-size: 42px;
     line-height: calc(49 / 42);
     min-width: 470px;
@@ -85,36 +85,36 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-@media screen and (min-width:768px) {
+@include tabl {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:64px;
     }
-@media screen and (min-width:1200px) {
+@include desk {
     
     display: flex;
     gap:30px;   
 } }
  .team__list_item:not(:last-child) {
     margin-bottom: 64px;
-    @media screen and (min-width:768px) {
+@include tabl {
         
         margin-bottom: 0;
     }
-    @media screen and (min-width:1200px) {
+ @include desk {
      margin-bottom: 0;
   }
  }
  .team__list_item {
-    background-color:#F7F7F7;
+    background-color:var(--bg-team);
     text-align: center;
    max-width: 100%;
    height: auto;
-@media screen and (min-width:480px) {
+@include mobile {
         max-width: 450px;  
     }
-@media screen and (min-width:1200px) {  
+@include desk {  
     max-height: 100%;
     margin-bottom: 0;
 }
@@ -127,12 +127,12 @@
     font-size: 18px;
     line-height: calc(24.5 / 18);
     font-weight: 500;
-    color:#303030;
+    color:var(--black30);
 }
 
 .name-subtitle {
     font-family: 'Open Sans', sans-serif;
-        color:#FF6C00;
+        color:var(--orange);
         margin-bottom: 30px;
     line-height: calc(19 / 14);
 
@@ -176,18 +176,19 @@
         transition-property: fill;
         transition-timing-function: linear;
     .social__item_link:hover & {
-            fill: #FF6C00;
+            fill: var(--orange);
         }
     
         .social__item_link:focus & {
-            fill: #FF6C00;
+            fill: var(--orange);
+
         }
     
         &:hover,
         &:focus {
             width: 20px;
             height: 20px;
-            fill: #FF6C00;
+            fill: var(--orange);
         }
     }
     

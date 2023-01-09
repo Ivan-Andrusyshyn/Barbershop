@@ -9,10 +9,10 @@
     height: 200px;  
 background-color: transparent;
 display: none;
-@media screen and (min-width:768px) {
+@include tabl {
     display: block;
 }
-@media screen and (min-width:1200px) {
+@include desk{
     padding-top: 32px;
 }
 }
@@ -30,10 +30,11 @@ align-items: center;
     flex-shrink: 0;
     margin-right: 58px;
     border: none;
+    fill: var(--white);
   .header-desk-logo {
-    fill: var(--black);
+    fill: var(--black30);
   }
-@media screen and (min-width:1200px) {
+  @include desk{
     margin-right: 131px;
 }
 }
@@ -44,7 +45,7 @@ align-items: center;
     display: flex;
     gap: 20px;
     flex-shrink: 0;
-@media screen and (min-width:1200px) {
+@include desk{
     gap: 30px;
     margin-right: 0;
 }
@@ -54,13 +55,13 @@ align-items: center;
 .header__item_link {
     letter-spacing: 0.1em;
     transition: 250ms color linear;
-    color: var(--color-white);
+    color: var(--white);
     font-size: 12px;
     line-height: calc(16.3 / 12);
     font-weight: 600;
    &:focus,
     &:hover {
-color: var(--orange-active);
+color: var(--orange);
 }
 }
 
@@ -71,7 +72,7 @@ color: var(--orange-active);
    flex-direction: column;
    flex-flow: wrap;
 justify-content: flex-end;
-   @media screen and (min-width:1200px) {
+  @include desk {
     gap: 43px;
     margin-top: 0;
     justify-content: center;
@@ -81,17 +82,17 @@ justify-content: flex-end;
 .header__number {
     letter-spacing: 0.1em;
     margin-right: 19px;
-    color: var(--color-white);
+    color: var(--white);
     font-size: 12px;
     line-height: calc(16.3 / 12);
     font-weight: 600;
     transition: 250ms color linear;
     &:hover,
     &:focus {
-    color: var(--orange-active);
+    color: var(--orange);
 }
 order: 2;
-@media screen and (min-width:1200px) {
+@include desk{
 margin-right: 0;
 order: 0;
 
@@ -104,9 +105,9 @@ order: 0;
     min-width: 160px;
     min-height: 40px;
     padding: 12px 20px;
-    border: 1px solid var(--orange-active);
+    border: 1px solid var(--orange);
     text-transform: uppercase;
-    color: var(--color-white);
+    color: var(--white);
     font-size: 12px;
     line-height: calc(16.3 / 12);
     font-weight: 600;
@@ -114,7 +115,7 @@ order: 0;
     order: 1;
     &:hover,
     &:focus {
-background-color: var(--orange-active);
+background-color: var(--orange);
 }
 }
 
@@ -134,12 +135,12 @@ background-color: var(--orange-active);
     right: 0;
     bottom: 0;
     z-index: 2;
-    fill: var(--color-white);
-@media screen and (min-width:480px) {
+    fill: var(--white);
+@include mobile {
     padding-left: 31px;
     padding-right: 31px;
 }
-@media screen and (min-width:768px) {
+@include tabl {
     display: none;
 }
 }
@@ -154,7 +155,7 @@ background-color: var(--orange-active);
     right: 31px;
 }
 .header-svg-logo {
-    fill: var(--color-white);
+    fill: var(--white);
 }
 .is-hidden {
     opacity: 0;
