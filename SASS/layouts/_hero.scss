@@ -68,7 +68,10 @@
     background-image:
    var(--linear), 
      url(../images/hero-tabl-x1-min.jpg);
-@include retina { 
+     @media (min-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) { 
 background-image:var(--linear),
  url(../images/hero-tabl-x2-min.jpg);
     }
