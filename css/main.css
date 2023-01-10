@@ -395,6 +395,12 @@ img {
     flex-grow: 1;
     max-width: 100%;
     padding: 0 0 237px 98px;
+    background-image: var(--linear), url(../images/hero-tabl-x1-min.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: var(--linear), url(../images/hero-tabl-x2-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
