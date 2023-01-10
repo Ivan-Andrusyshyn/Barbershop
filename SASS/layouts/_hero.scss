@@ -60,16 +60,15 @@
     flex-direction: column;
     gap: 20px;
     height: 580px;
-    max-width: 100%;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image:var(--linear),
-    url(../images/hero-tabl-x1-min.jpg);
+    url(../images/hero-mob-1x-min.jpg);
    @include retina {
 background-image:var(--linear),
- url(../images/hero-tabl-x2-min.jpg);
+ url(../images/hero-mob-2x-min.jpg);
 }
 @include mobile {
     width: auto;
