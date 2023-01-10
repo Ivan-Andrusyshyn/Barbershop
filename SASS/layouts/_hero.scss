@@ -67,13 +67,13 @@
     background-position: center;
     background-color: var(--gray);
     background-image:
-   var(--linear),
+   var(--linear), 
      url(../images/hero-tabl-x1-min.jpg);
 @include retina { 
 background-image:var(--linear),
  url(../images/hero-tabl-x2-min.jpg);
     }
-
+ 
 @include mobile{
     width: auto;
     background-size: cover;
