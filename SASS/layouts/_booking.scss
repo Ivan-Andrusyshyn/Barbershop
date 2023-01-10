@@ -56,7 +56,7 @@ background-image: url(../images/desk-booking-x1.png);
     padding: 0 0 84px 0;
 @include tabl{
         padding: 0 0 100px 0;
-    justify-content: start;
+    justify-content: flex-start;
 
     }
     @include desk{
