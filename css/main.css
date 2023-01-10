@@ -397,7 +397,7 @@ img {
     padding: 0 0 237px 98px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero-bg {
     max-width: 1100px;
     padding-left: 100px;
@@ -405,7 +405,7 @@ img {
     background-image: var(--linear), url(../../images/Slider-hero1.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-bg {
     background-image: var(--linear), url(../images/hero-desk-x2-min.jpg);
   }
