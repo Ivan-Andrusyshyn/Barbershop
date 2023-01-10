@@ -65,7 +65,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: var(--gray);
     background-image:
    var(--linear), 
      url(../images/hero-tabl-x1-min.jpg);
@@ -99,7 +98,7 @@ background-image:var(--linear),
     max-width: 100%;
     padding: 0 0 237px 98px;
 @include desk {
-        max-width: 1200px;
+        max-width: 1100px;
          padding-left: 100px;
          padding-bottom: 208px;
          background-image:var(--linear),

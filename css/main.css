@@ -361,7 +361,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--gray);
   background-image: var(--linear), url(../images/hero-tabl-x1-min.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -400,7 +399,7 @@ img {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .hero-bg {
-    max-width: 1200px;
+    max-width: 1100px;
     padding-left: 100px;
     padding-bottom: 208px;
     background-image: var(--linear), url(../../images/Slider-hero1.jpg);
