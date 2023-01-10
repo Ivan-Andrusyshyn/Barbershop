@@ -43,7 +43,7 @@ background-image: url(../images/desk-booking-x1.png);
     justify-content: center;
    
     @include desk{
-        justify-content: start;
+        justify-content: flex-start;
         display: flex;
         flex-direction: row;
         gap: 130px;
