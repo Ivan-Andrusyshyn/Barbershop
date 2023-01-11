@@ -541,6 +541,19 @@ img {
   }
 }
 
+.about__item {
+  overflow: hidden;
+}
+
+.about__item img {
+  transition: 0.33s all ease-in-out;
+  transform: scale(1);
+}
+
+.about__item img:hover {
+  transform: scale(1.1);
+}
+
 .title__about {
   width: 277px;
   margin-bottom: 20px;
@@ -1170,6 +1183,15 @@ img {
   }
 }
 
+.team__list_item {
+  transition: 0.33s all ease-in-out;
+  transform: scale(1);
+}
+
+.team__list_item:hover {
+  transform: scale(1.1);
+}
+
 .name-title {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -1324,6 +1346,16 @@ img {
   .colection__item {
     max-height: 100%;
   }
+}
+.colection__item {
+  overflow: hidden;
+}
+.colection__item img {
+  transition: 0.33s all ease-in-out;
+  transform: scale(1);
+}
+.colection__item img:hover {
+  transform: scale(1.1);
 }
 
 .booking {

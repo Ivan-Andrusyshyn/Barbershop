@@ -60,7 +60,18 @@
     line-height: calc(15 / 11);
 }
 }
-
+.about__item {
+    overflow: hidden;
+  }
+  
+  .about__item img {
+    transition: 0.33s all ease-in-out;
+    transform: scale(1);
+  }
+  
+  .about__item img:hover {
+    transform: scale(1.1);
+  }
 .title__about{
     width: 277px;
     margin-bottom: 20px;
